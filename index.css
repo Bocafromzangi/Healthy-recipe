@@ -1,0 +1,430 @@
+:root{
+  --text-color:rgb(65, 106, 65);
+  --accent-color:rgb(59, 120, 200);
+  --junior-color:rgb(213, 213, 145);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 12pt;
+  font-family: Poppins, Segoe UI, sans-serif, Tahoma;
+}
+
+nav{
+  height: 80px;
+  width: 100%;
+  background-color: var(--junior-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.links-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav a{
+  height: 100%;
+  text-decoration: none;
+  padding: 0 20px;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+nav button{
+  background-color: var(--text-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-left:20px ;
+  margin-right: 20px;
+  cursor: pointer;
+
+}
+
+/* nav a:hover{
+  background-color: var(--accent-color);
+} 
+.home-link{
+  margin-right: auto;
+} */
+
+#sidebar-active{
+  display: none;
+}
+.open-sidebar-active, .close-sidebar-active{
+  padding: 0 20px;
+display: none;
+}
+.healthy{
+  width: 100%;
+}
+
+.meals{
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--text-color);
+  text-align:center ;
+
+}
+
+span{
+  background-color: orange;
+  padding: 0 7px;
+
+}
+
+.discover{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.first-div button{
+  margin-top: 40px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--text-color);
+  cursor: pointer;
+
+}
+
+.woman{
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width:1450px;
+  height:500px;
+}
+
+.what{
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--text-color);
+  text-align:center ;
+  margin-bottom: 40px;
+}
+
+.image1{
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+
+}
+
+.inner-div{
+  width: 300px;
+  height: 200px;
+}
+.whole{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.each{
+  color: darkgray;
+}
+
+
+.second-div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+  margin-bottom: 40px;
+}
+
+.built{
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.cooking, .whether{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 28px;
+}
+
+/* .para-div{
+  width: 700px;
+} */
+
+
+.dish{
+height: 400px;
+width: 600px;
+border-radius: 10px;
+}
+
+.third-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  gap: 5px;
+}
+
+.pics{
+  min-height: 300px;
+  background-image: url(pics.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  width: 1450px;
+  align-content: center;
+
+  
+}
+
+.ready{
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.hit{
+  
+  font-size: 16px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.browse{
+   background-color: var(--text-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-left:20px ;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:350px){
+  .links-container{
+    flex-direction: column;
+    position: fixed;
+    display: none;
+    top: 0;
+    right:0;
+    z-index: 10;
+    background-color: var(--junior-color);
+    width: 300px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  nav a{
+    height: auto;
+    padding: 30px 30px;
+    width: 100%;
+    
+  }
+
+  nav button{
+  background-color: var(--text-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  width: 80%;
+  cursor: pointer;
+
+}
+
+  .open-sidebar-active, .close-sidebar-active{
+  margin-left: -200px;
+display: block;
+}
+
+nav svg{
+  fill: var(--text-color); 
+}
+
+#sidebar-active:checked ~ .links-container{
+  display: flex;
+}
+
+.healthy{
+  width: 100%;
+  display: none;
+}
+
+
+.meals{
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--text-color);
+  text-align:center ;
+
+}
+
+span{
+  background-color: orange;
+  padding: 0 7px;
+
+}
+
+.discover{
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.first-div button{
+  margin-top: 40px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: var(--text-color);
+  cursor: pointer;
+
+}
+
+.woman{
+  border-radius: 8px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width:280px;
+  height:140px;
+}
+
+.what{
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+  text-align:center ;
+  margin-bottom: 40px;
+}
+
+
+
+.second-div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.inner-div{
+  margin-left: 20px;
+  margin-bottom: -200px;
+}
+
+.each{
+  font-size: 13px;
+}
+
+.whole{
+  margin-top: 3px;
+}
+.built{
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-top: 120px;
+  padding-left: 5px;
+}
+
+.cooking, .whether{
+  padding-left: 5px;
+  font-size: 11px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 22px;
+  
+}
+
+/* .para-div{
+  width: 700px;
+} */
+
+
+.dish{
+height: 140px;
+width: 280px;
+border-radius: 10px;
+}
+
+.third-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  gap: 5px;
+}
+
+.pics{
+  min-height: 150px;
+  background-image: url(pics.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  width: 290px;
+  align-content: center;
+
+  
+}
+
+.ready{
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.hit{
+  
+  font-size: 13px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.browse{
+   background-color: var(--text-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-left:20px ;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+
+  
+}
