@@ -1,0 +1,407 @@
+:root{
+  --text-color:rgb(65, 106, 65);
+  --accent-color:rgb(59, 120, 200);
+  --junior-color:rgb(213, 213, 145);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 12pt;
+  font-family: Poppins, Segoe UI, sans-serif, Tahoma;
+}
+
+nav{
+  height: 80px;
+  width: 100%;
+  background-color: var(--junior-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.links-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav a{
+  height: 100%;
+  text-decoration: none;
+  padding: 0 20px;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+nav button{
+  background-color: var(--text-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-left:20px ;
+  margin-right: 20px;
+  cursor: pointer;
+
+}
+
+/* nav a:hover{
+  background-color: var(--accent-color);
+} 
+.home-link{
+  margin-right: auto;
+} */
+
+#sidebar-active{
+  display: none;
+}
+.open-sidebar-active, .close-sidebar-active{
+  padding: 0 20px;
+display: none;
+}
+.healthy{
+  width: 100%;
+}
+
+.meals{
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--text-color);
+  text-align:center ;
+  margin-top: 80px;
+
+}
+
+span{
+  background-color: orange;
+  padding: 0 7px;
+
+}
+
+.discover{
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+
+.time{
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  gap: 20px;
+}
+
+#prep-time{
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: rgb(254, 252, 252);
+  box-shadow: 1px 1px 3px black;
+  cursor: pointer;
+}
+
+#cook-time{
+    padding: 8px 20px;
+  border-radius: 8px;
+   background-color: rgb(254, 252, 252);
+  box-shadow: 1px 1px 3px black;
+  cursor: pointer;
+}
+
+input{
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: rgb(254, 252, 252);
+  box-shadow: 1px 1px 3px black;
+  cursor: pointer;
+  border: none;
+  width: 350px;
+  margin-top: 50px;
+}
+
+.long{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.big{
+  width: 345px;
+  height: 500px;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px black;
+}
+
+.image{
+  width: 330px;
+  height: 250px;
+ margin-left: 5px;
+ margin-right: 5px;
+ margin-top: 5px;
+ border-radius: 8px;
+}
+
+
+
+.salad{
+  font-size: 22px;
+  color: var(--text-color);
+  font-weight: bold;
+   margin-top: 20px;
+   margin-left: 15px;
+  
+}
+.a{
+  margin-top: 17px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  margin-left: 15px;
+}
+
+
+.account{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color);
+  margin-left: 15px;
+}
+
+.min{
+  display: flex;
+  align-items: center; 
+  gap: 20px;
+}
+
+#cook{
+  margin-top: 20px;
+}
+
+.view{
+  width: 330px;
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--text-color);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.large{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 530px;
+  margin-left: 25px;
+}
+
+
+
+
+
+
+@media only screen and (max-width:768px){
+   .links-container{
+    flex-direction: column;
+    position: fixed;
+    display: none;
+    top: 0;
+    right:0;
+    z-index: 10;
+    background-color: var(--junior-color);
+    width: 300px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  nav a{
+    height: auto;
+    padding: 30px 30px;
+    width: 100%;
+    
+  }
+
+  nav button{
+  background-color: var(--text-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  width: 80%;
+  cursor: pointer;
+
+}
+
+  .open-sidebar-active, .close-sidebar-active{
+  margin-left: -200px;
+display: block;
+}
+
+nav svg{
+  fill: var(--text-color); 
+}
+
+#sidebar-active:checked ~ .links-container{
+  display: flex;
+}
+
+.healthy{
+  width: 100%;
+  display: none;
+}
+
+.meals{
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--text-color);
+  
+  margin-top: 50px;
+
+}
+
+span{
+  background-color: orange;
+  padding: 0 7px;
+
+}
+
+.discover{
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+
+}
+
+
+
+
+.time{
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  gap: 20px;
+}
+
+#prep-time{
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: rgb(254, 252, 252);
+  box-shadow: 1px 1px 3px black;
+  cursor: pointer;
+}
+
+#cook-time{
+    padding: 8px 20px;
+  border-radius: 8px;
+   background-color: rgb(254, 252, 252);
+  box-shadow: 1px 1px 3px black;
+  cursor: pointer;
+}
+
+input{
+  padding: 8px 20px;
+  border-radius: 8px;
+  background-color: rgb(254, 252, 252);
+  box-shadow: 1px 1px 3px black;
+  cursor: pointer;
+  border: none;
+  width: 350px;
+  margin-top: 30px;
+}
+
+.long{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.big{
+  width: 345px;
+  height: 500px;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px black;
+}
+
+.image{
+  width: 330px;
+  height: 250px;
+ margin-left: 5px;
+ margin-right: 5px;
+ margin-top: 5px;
+ border-radius: 8px;
+}
+
+
+
+.salad{
+  font-size: 22px;
+  color: var(--text-color);
+  font-weight: bold;
+   margin-top: 20px;
+   margin-left: 15px;
+  
+}
+.a{
+  margin-top: 17px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  margin-left: 15px;
+}
+
+
+.account{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-color);
+  margin-left: 15px;
+}
+
+.min{
+  display: flex;
+  align-items: center; 
+  gap: 20px;
+}
+
+#cook{
+  margin-top: 20px;
+}
+
+.view{
+  width: 330px;
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--text-color);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.large{
+  display: grid;
+  grid-template-columns: 1fr  ;
+  grid-template-rows: 530px 530px 530px 530px 530px 530px 530px 530px;
+  margin-left: 25px;
+}
+}
