@@ -1,0 +1,186 @@
+:root{
+  --text-color:rgb(65, 106, 65);
+  --accent-color:rgb(59, 120, 200);
+  --junior-color:rgb(213, 213, 145);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 12pt;
+  font-family: Poppins, Segoe UI, sans-serif, Tahoma;
+}
+
+
+a{
+  text-decoration: none;
+  font-size: 32px;
+  color: var(--text-color);
+  font-weight: bold;
+  
+}
+
+.first{
+  margin: 20px;
+
+}
+
+form{
+  display: flex;
+  gap: 20px;
+}
+
+form label{
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+form select{
+  font-family: sans-serif;
+  width: 100px;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid darkgray;
+}
+
+form input{
+  font-family: sans-serif;
+  width: 300px;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid darkgray;
+  padding-left: 15px;
+}
+
+
+.welcome{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.d{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+span{
+  color: var(--text-color);
+  font-weight: bold;
+
+}
+
+.site{
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.continue{
+  width: 350px;
+  padding: 10px 0;
+  background-color: var(--text-color);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  margin-top: 10px;
+}
+.c{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width:768px){
+  
+
+a{
+  text-decoration: none;
+  font-size: 32px;
+  color: var(--text-color);
+  font-weight: bold;
+  
+}
+
+.first{
+  margin: 20px;
+
+}
+
+form{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+form label{
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+form select{
+  font-family: sans-serif;
+  width: 90px;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid darkgray;
+  padding-left:7px;
+}
+
+form input{
+  font-family: sans-serif;
+  width: 200px;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid darkgray;
+  padding-left: 15px;
+}
+
+
+.welcome{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.d{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+span{
+  color: var(--text-color);
+  font-weight: bold;
+
+}
+
+.site{
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.continue{
+  width: 350px;
+  padding: 10px 0;
+  background-color: var(--text-color);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  margin-top: 10px;
+ margin-left: 25px;
+}
+.c{
+  display: flex;
+  justify-content: center;
+}
+}
